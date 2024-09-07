@@ -1,0 +1,75 @@
+<div class="sidebar"  [ngClass]="{'close': isClose}">
+    <div class="header">
+        <div class="image-text">
+            <div class="header-text">
+                <span class="name">JLLC</span>
+            </div>
+        </div>
+        <svg class="toggle svg-icon" (click)="toggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+    </div>
+    <div class="menu-bar">
+        <div class="menu">
+            <li class="search-box">
+                <svg class="svg-icon icon icon-tabler icons-tabler-outline icon-tabler-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg> 
+                <input type="search" placeholder="Search..."/>
+            </li>
+            <ul class="menu-links">
+                <li class="nav-link">
+                    <a>
+                        <svg  xmlns="http://www.w3.org/2000/svg"    viewBox="0 0 24 24"  fill="currentColor"  class="svg-icon icon icon-tabler icons-tabler-filled icon-tabler-layout-dashboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 3a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2zm10 -4a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 -8a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2z" /></svg>
+                        <p class="text nav-text">Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a [routerLink]="['/administrator']">
+                        <svg class="svg-icon icon icon-tabler icons-tabler-filled icon-tabler-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" /><path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" /></svg>
+                        <p class="text nav-text">Administrador</p>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a [routerLink]="['/customers']">
+                        <svg class="svg-icon icon icon-tabler icons-tabler-filled icon-tabler-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" /><path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" /></svg>
+                        <p class="text nav-text">Clientes</p>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor"  class="svg-icon  icon icon-tabler icons-tabler-filled icon-tabler-circles"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.5 12a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" /><path d="M17.5 12a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" /><path d="M12 2a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" /></svg>
+                        <p class="text nav-text">Productos</p>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <svg class="svg-icon icon icon-tabler icons-tabler-outline icon-tabler-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                        <p class="text nav-text">Dashboard</p>
+                    </a>
+                </li>
+         
+                <li class="nav-link">
+                    <a href="#">
+                        <svg class="svg-icon icon icon-tabler icons-tabler-outline icon-tabler-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                        <p class="text nav-text">Dashboard</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-content">
+            <li class="">
+                <a>
+                    <svg class="svg-icon icon icon-tabler icons-tabler-outline icon-tabler-logout" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
+                    <span class="text">Cerrar sesion</span>
+                </a>
+            </li>
+            <li class="mode">
+                <div class="moon-sun">
+                    <svg class="icon icon-tabler icons-tabler-outline icon-tabler-moon moon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
+                    <svg class="icon icon-tabler icons-tabler-outline icon-tabler-sun sun" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+                </div>
+                <span class="monde-text text">Dark Mode</span>
+                <div (click)="modeSwitch()" class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </li>
+       </div>
+    </div>
+</div>

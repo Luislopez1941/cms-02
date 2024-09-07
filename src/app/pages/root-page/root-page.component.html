@@ -1,0 +1,8 @@
+<div class="app">
+    <app-sidebar [ngClass]="{'toggle-class': toggle.isToggled}"  />
+    <div class="main">
+        <app-header />
+        <router-outlet />
+    </div>
+    <app-toats-success />
+</div>

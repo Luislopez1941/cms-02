@@ -1,0 +1,20 @@
+.administrator {
+    padding: 20px;
+}
+
+.administrator__container {
+
+}
+
+.administrator__container > .row__one {
+    display: flex;
+    justify-content: center;
+}
+
+.container__create_customers {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+  

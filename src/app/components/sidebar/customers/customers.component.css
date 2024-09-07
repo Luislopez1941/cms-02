@@ -1,0 +1,13 @@
+.customers {
+    padding: 20px;
+}
+
+.customers__container {
+
+}
+
+.customers__container > .row__one {
+    display: flex;
+    justify-content: center;
+}
+

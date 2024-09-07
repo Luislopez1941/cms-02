@@ -1,0 +1,46 @@
+<div [ngClass]="{'overlay__customers': true, 'active': modal.modalState}">
+  <div [ngClass]="{'popup__customers': true, 'active': modal.modalState}">
+    <a class="btn-cerrar-popup__customers" (click)="modalCloseCreate()">
+      <svg class='svg__close' xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+        <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+      </svg>
+    </a>
+    <p class='title__modals'>Crear nueva Empresa</p>
+    <form class='container__create_customers' >
+     
+        <div>
+          <label>Nombre</label>
+          <input class="inputs__general" placeholder="Nombre" type="text">
+        </div>
+        <div>
+          <label>Apellidos</label>
+          <input class="inputs__general" placeholder="Apellidos" type="text">
+        </div>
+        <div>
+          <label>Pais</label>
+          <input class="inputs__general" placeholder="Perfil" type="text">
+        </div>
+        <div>
+          <label>Correo Electronico</label>
+          <input class="inputs__general" placeholder="Email" type="text">
+        </div>
+        <div>
+          <label>Contraseña</label>
+          <input class="inputs__general" placeholder="Contraseña" type="text">
+        </div>
+        <div>
+          <label>Perfil</label>
+          <input class="inputs__general" placeholder="Perfil" type="text">
+        </div>
+        <div>
+          <label>Genero</label>
+          <input class="inputs__general" placeholder="Telefono" type="text">
+        </div>
+        <div>
+          <label>Fecha de nacimiento</label>
+          <input class="inputs__general" placeholder="Rol" type="text">
+        </div>
+
+    </form>
+  </div>
+</div>

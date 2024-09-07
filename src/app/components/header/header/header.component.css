@@ -1,0 +1,51 @@
+.hero {
+    border-bottom: 1.5px solid var(--sidebar-color);
+}
+
+.hero__container {
+    height: 10vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inputs_searh {
+    display: flex;
+    width: 400px;
+    background-color: var(--item-hover);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-indent: 15px;
+}
+
+.header__inputs_searh > input {
+    margin-left: 10px;
+}
+
+
+.hero__input {
+    background-color: var(--item-hover);
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+
+.hero__container > .right {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.hero__container > .right > .user {
+    fill: var(--purple-color);
+}
+
+.hero__container > .right .notification {
+    fill: var(--purple-color);
+}
