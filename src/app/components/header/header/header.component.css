@@ -39,7 +39,7 @@
 .hero__container > .right {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 200px;
 }
 
 .hero__container > .right > .user {
@@ -48,4 +48,10 @@
 
 .hero__container > .right .notification {
     fill: var(--purple-color);
+}
+
+@media screen and (max-width: 768px) {
+    .header__inputs_searh {
+        display: none;
+    }
 }
