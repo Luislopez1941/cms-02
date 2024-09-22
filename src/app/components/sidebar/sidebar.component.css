@@ -130,6 +130,7 @@
 .sidebar .header .image-text .header-text {
     display: flex;
     flex-direction: column;
+    padding: 10px 0;
 }
 
 .image-text .name {
