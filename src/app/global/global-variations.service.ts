@@ -17,4 +17,6 @@ export class GlobalVariationsService {
 
   public message: string = '';
 
+  public tokenGlobal: any = false;
+
 }

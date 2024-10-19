@@ -1,29 +1,148 @@
 .login {
     width: 100%;
     height: 100%;
+    background-color: #ffffff;
 }
 
 .login__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
     height: 100%;
 }
 
-.form__login {
-    width: 450px;
-    margin: 0 auto;
-    padding: 20px 30px;
-    box-shadow: 0px 0px 100px 47px rgba(0,0,0,0.1);
+.left__login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left__login > div {
+    
+}
+
+.left__login > div .title__login {
+    margin: 50px 0;
+}
+
+.left__login > div .title__login > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.social-media-icons_login {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.social-media-icons_login > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+    border: 1.5px solid #dee6ee;
     border-radius: 10px;
 }
 
-.form__login_container {
+.social-media-icons_login > div > p {
+    margin-left: 15px;
+}
 
+.right__login {
+    background-color: var(--purple-color);
+}
+
+
+ .form__login {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.form__login_container > div {
+    margin: 20px 0;
 }
 
 .btns__login {
     margin: 20px 0;
+}
+
+.btns__login > button {
+    width: 100%;
     text-align: center;
 }
+ 
+.form__login_container .inputs__general_icons {
+    background-color: #fafbfe;
+    border: 1.5px solid #dee6ee;
+    border-radius: 10px;
+
+}
+
+.form__login_container .inputs__general_icons svg {
+    color: #6c7d97;
+}
+
+.form__login_container .inputs__general_icons .inputs__generic {
+    background-color: #fafbfe;
+}
+
+.form__login_container .inputs__general_icons .inputs__generic::placeholder {
+    color: #6c7d97;
+}
+
+.form__login_container > .row__three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__login_container > .row__three > .remember {
+    display: flex;
+}
+
+.form__login_container > .row__three > .remember > p {
+    margin-left: 10px;
+}
+
+.form__login_container > .row__three > .forgot > p {
+    color: var(--purple-color);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+
+    .left__login {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    .right__login {
+        display: none;
+    }
+
+    .login__container {
+        grid-template-columns: 100%;
+    }
+
+    .form__login {
+        width: 100%;
+    }
+
+    .social-media-icons_login > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        border: 1.5px solid #dee6ee;
+        border-radius: 10px;
+    }
+    
+    
+    
+}
+
 

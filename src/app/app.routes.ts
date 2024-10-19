@@ -1,11 +1,12 @@
 import { Routes } from '@angular/router';
 import { RootPageComponent } from './pages/root-page/root-page.component';
+import { authGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
     {
         path: '',
         component: RootPageComponent,
-        canActivate: [],
+        canActivate: [authGuard],
         children: [
             {
                 path: 'customers',

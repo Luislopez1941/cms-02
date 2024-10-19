@@ -119,7 +119,7 @@ body.dark .sidebar li a:hover .text {
   .inputs__general_icons {
     display: flex;
     width: 100%;
-    background-color: var(--input-color) !important;
+    background-color: var(--input-color);
     color: var(--text-color);
     margin-top: 10px;
     border: none;

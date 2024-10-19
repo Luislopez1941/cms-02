@@ -28,55 +28,55 @@ export default class LoginComponent {
   constructor(
     private _administratorsService: AdministratorsService,
     public toast: GlobalVariationsService,
+    public GlobalVariations: GlobalVariationsService,
     private router: Router
   ) {
 
   }
  
-
   dataUser: any
 
   login() {
-
     let data = {
       email: this.user.email,
       password: this.user.password
     };
+    this.GlobalVariations.tokenGlobal = true
+    this.router.navigate(['/customers']);
     // Realizar la llamada al servicio de inicio de sesión
-    this._administratorsService.customer_login(data).subscribe(
+    // this._administratorsService.customer_login(data).subscribe(
+    //   (data: any) => {
+    //     if (data === undefined) {
+    //     } else {
+    //       if(data.status == 'warning') {
+    //         this.toast.toastWarning = true;
+    //         this.toast.message = data.message
+    //         console.log(data)
+    //         return
+    //       }
 
-      (data: any) => {
-        if (data === undefined) {
-        } else {
-          if(data.status == 'warning') {
-            this.toast.toastWarning = true;
-            this.toast.message = data.message
-            console.log(data)
-            return
-          }
-
-          if(data.status == 'success') {
-            this.toast.message = data.message
-            setTimeout(() => {
-                this.toast.toastSuccess = true;
-            }, 100); 
-            // Guardar datos de usuario y token en el almacenamiento local
-            this.dataUser = data.data;
-            localStorage.setItem('token', data.token);
-            localStorage.setItem('_id', data.data._id);
-            // Redirigir a la página principal
-            this.router.navigate(['/customers']);
-          }
+    //       if(data.status == 'success') {
+    //         this.toast.message = data.message
+    //         setTimeout(() => {
+    //             this.toast.toastSuccess = true;
+    //         }, 100); 
+    //         // Guardar datos de usuario y token en el almacenamiento local
+    //         this.dataUser = data.data;
+    //         localStorage.setItem('token', data.token);
+    //         localStorage.setItem('_id', data.data._id);
+    //         // Redirigir a la página principal
+    //         this.router.navigate(['/customers']);
+    //       }
        
 
-        }
-      },
-      (error: any) => {
-        console.error('Error fetching customers:', error);
-        this.toast.message == 'Hubo un error'
-        this.toast.toastError = true;
-      }
-    );
+    //     }
+    //   },
+    //   (error: any) => {
+    //     console.error('Error fetching customers:', error);
+    //     this.toast.message == 'Hubo un error'
+    //     this.toast.toastError = true;
+    //   }
+    // );
 
     setTimeout(() => {
       this.toast.toastError = false;
