@@ -14,6 +14,8 @@ export class SidebarComponent implements OnInit  {
   isToggled: boolean = false;
   isClose: boolean = false;
 
+  activeItem = false
+
   constructor(private renderer: Renderer2) {}
 
   ngOnInit() {
